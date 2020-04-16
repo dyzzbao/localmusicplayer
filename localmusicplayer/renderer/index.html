@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地播放器</title>
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>我的播放器</h1>
+        <button type="button" id="add-music-button" class="btn btn-primary btn-lg btn-block mt-4">
+            添加歌曲到曲库
+        </button>
+        <br>
+        <div id="tracksList"></div>
+        
+        <footer class="navbar-fixed-bottom">
+            <hr>
+            <div id="container">
+                <div class="row" id="player-status"></div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"  style="width: 0%;" id="player-progress">
+                        <span class="sr-only">0%</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            require('./index.js');
+        </script>
+    </div>
+</body>
+
+</html>

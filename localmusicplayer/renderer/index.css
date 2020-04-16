@@ -1,0 +1,10 @@
+#tracksList .col-md-2 .glyphicon:hover {
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+}
+#player-status,.progress{
+    margin:15px;
+}
+
